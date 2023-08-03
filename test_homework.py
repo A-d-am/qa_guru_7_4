@@ -13,6 +13,7 @@ def test_greeting():
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
 
+    print(output)
 
 def test_rectangle():
     """
@@ -42,6 +43,7 @@ def test_circle():
     length = math.pi * (r * 2)
     assert length == 144.51326206513048
 
+    print(f'{area = }, {length = }')
 
 def test_random_list():
     """
@@ -74,7 +76,7 @@ def test_dicts():
     """
     first = ["a", "b", "c", "d", "e"]
     second = [1, 2, 3, 4, 5]
-    # TODO создайте словарь
+
     d = dict(zip(first, second))
     print(d.values())
     assert isinstance(d, dict)
